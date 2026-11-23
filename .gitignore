@@ -1,0 +1,48 @@
+# ─── Secrets & local config ──────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ─── Node ────────────────────────────────────────────────────
+node_modules/
+dist/
+dist-ssr/
+build/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── Python ──────────────────────────────────────────────────
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ─── Runtime data (never commit) ─────────────────────────────
+ms1-core-api/uploads/
+ms2/temp/
+*.wav
+*.webm
+debug_output.json
+
+# ─── Logs ────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Deploy / editor / OS ────────────────────────────────────
+.vercel/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
